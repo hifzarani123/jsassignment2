@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var scores = [12, 45, 3, 22, 34, 50];
+        var stopValue = +prompt("Enter the value at which you want to stop the array: \n" + scores);
+        for (var i = 0; i < scores.length; i++) {
+            if (scores[i] === stopValue) {
+                document.write(scores.slice(0, i + 1));
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>

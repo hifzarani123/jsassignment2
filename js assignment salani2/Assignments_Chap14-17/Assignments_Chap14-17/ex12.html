@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var colors = ["red", "blue", "pink", "yellow", "green"];
+        document.write("<h3>Original array:</h3>");
+        document.write(colors + "<br/>");
+
+        // (a)
+        var a = prompt("What color you want to add to the beginning of the array:\n" + colors);
+        colors.unshift(a)
+        document.write("<h3>(a)Adding " + a + " to the beginning:</h3>");
+        document.write(colors + "<br/>");
+
+        // (b)
+        var b = prompt("What color you want to add to the end of the array:\n" + colors);
+        colors.push(b);
+        document.write("<h3>(b)Adding " + b + " to the end:</h3>");
+        document.write(colors + "<br/>");
+
+        // (c)
+        colors.unshift("cyan", "magenta")
+        document.write("<h3>(c)Adding cyan & magenta to the beginning:</h3>");
+        document.write(colors + "<br/>");
+
+        // (d)
+        colors.shift()
+        document.write("<h3>(d)Deleting first color:</h3>");
+        document.write(colors + "<br/>");
+
+        // (e)
+        colors.pop()
+        document.write("<h3>(e)Deleting last color:</h3>");
+        document.write(colors + "<br/>");
+
+        // (f)
+        var f1 = +prompt("At which index you want to add a color:\n" + colors);
+        var f2 = prompt("What color you want to add:\n" + colors);
+        colors.splice(f1, 0, f2)
+        document.write("<h3>(f)Adding " + f2 + " at index " + f1 + ":</h3>");
+        document.write(colors + "<br/>");
+
+        // (g)
+        var g1 = +prompt("From which index you want to start delete color(s):\n" + colors);
+        var g2 = +prompt("How many colors you want to delete:\n" + colors);
+        colors.splice(g1, g2)
+        if (g2 > 1) {
+            document.write("<h3>(g)Deleting colors from index " + g1 + " to index " + (g1 + g2 - 1) + ":</h3>");
+        }
+        else {
+            document.write("<h3>(g)Deleting color of index " + g1 + ":</h3>");
+        }
+        document.write(colors + "<br/>");
+    </script>
+</body>
+
+</html>

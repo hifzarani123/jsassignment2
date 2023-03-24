@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var devices = [];
+        devices.push("keyboard");
+        devices.push("mouse");
+        devices.push("printer");
+        devices.push("monitor");
+        document.write("<h3>Devices:</h3>" + devices + "<br/>");
+        var out1 = devices.shift();
+        var out2 = devices.shift();
+        var out3 = devices.shift();
+        var out4 = devices.shift();
+        document.write("<h3>Out:</h3>" + out1);
+        document.write("<h3>Out:</h3>" + out2);
+        document.write("<h3>Out:</h3>" + out3);
+        document.write("<h3>Out:</h3>" + out4);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nameItem1 = prompt("Enter name of item 1");
+        var nameItem2 = prompt("Enter name of item 2");
+        var priceItem1 = +prompt("Enter price of item 1");
+        var priceItem2 = +prompt("Enter price of item 2");;
+        var quantityItem1 = +prompt("Enter ordered quantity of item 1");
+        var quantityItem2 = +prompt("Enter ordered quantity of item 2");
+        var shippingCharges = +prompt("Enter shipping charges");
+        var totalCost = priceItem1 * quantityItem1 + priceItem2 * quantityItem2 + shippingCharges;
+        if (totalCost > 2000) {
+            var discounted = totalCost - totalCost * 0.1;
+        }
+        document.write("<h1>Shopping Cart</h1>")
+        document.write("<br/>Price of " + nameItem1 + " is " + priceItem1)
+        document.write("<br/>Quantity of " + nameItem1 + " is " + quantityItem1)
+        document.write("<br/>Price of " + nameItem2 + " is " + priceItem2)
+        document.write("<br/>Quantity of " + nameItem2 + " is " + quantityItem2)
+        document.write("<br/><br/>Shipping Charges " + shippingCharges)
+        document.write("<br/><br/>Total cost of your order is " + totalCost + " PKR")
+        document.write("<br/>Discounted Price is " + discounted + " PKR")
+    </script>
+</body>
+
+</html>
